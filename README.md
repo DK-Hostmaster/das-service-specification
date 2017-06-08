@@ -20,6 +20,7 @@ Revision: 1.6
 	- [AAA](#aaa)
 	- [Supported Media-types](#supported-media-types)
 	- [Rate Limiting](#rate-limiting)
+	- [Waiting List](#waiting-list)
 - [Session Handling](#session-handling)
 - [Domain Status](#domain-status)
 		- [Available: `available`](#available-available)
@@ -173,6 +174,13 @@ If rate limit is exceeded the HTTP status code 429 “Too many requests” is re
 Current limit is set to 60 requests per minute.
 
 Please note the sandbox environment is not under rate limiting at this time, due to a wish for unlimited use for developers. 
+
+<a name="waiting-list"></a>
+## Waiting List
+
+DK Hostmaster offers a waiting list service for domainnames, when a domainname becomes available to the first position on a waiting list, it should be registered using the standard registration proces either using the **email form** or **EPP**. This influences the create domain command, which should just be populated with the userid of the user which has been pre-approved for registration of the domainname with DK Hostmaster.
+
+Please refer to the DK Hostmaster A/S [website](https://www.dk-hostmaster.dk/en/waiting-list) for more information.
 
 <a name="session-handling"></a>
 # Session Handling
